@@ -1,0 +1,204 @@
+/* Reseteo CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Empiezan los estilos de la pagina principal*/
+
+body {
+  background-color: black;
+}
+
+.navegacion {
+  background-color: rgb(208, 200, 216);
+  width: 100vw;
+  height: 95px;
+  position: sticky;
+  top: 0;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.logo {
+  margin-left: 70px;
+  height: 95px;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 95px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(15, 4, 4);
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 25px 25px;
+}
+
+nav ul li a:hover {
+  opacity: 0.6;
+  border-bottom: 3px solid black;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .logo {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 950px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0, 5s;
+    background-color: rgb(208, 200, 216);
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  li a:hover {
+    background-color: rgb(189, 189, 189);
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 950px) {
+  .logo {
+    height: 70px;
+    margin-top: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    height: 65px;
+    margin-top: 15px;
+  }
+}
+
+.seccionInicio {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vestidoSeccion {
+  width: 50vw;
+  height: 480px;
+}
+
+.vestidoSeccion:hover {
+  opacity: 0.8;
+}
+
+.pilaInicio {
+  width: 50vw;
+  height: 480px;
+}
+
+.pilaInicio:hover {
+  opacity: 0.8;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.centrado {
+  font-family: "Genos", sans-serif;
+  letter-spacing: 10px;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 850px) {
+  .pilaInicio {
+    height: 400px;
+  }
+  .vestidoSeccion {
+    height: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .seccionInicio {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .pilaInicio {
+    width: 100vw;
+  }
+  .vestidoSeccion {
+    width: 100vw;
+  }
+}
+
+.mapsLavadero {
+  width: 100vw;
+}

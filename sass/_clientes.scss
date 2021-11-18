@@ -1,0 +1,25 @@
+.tituloClientes {
+  color: white;
+  font-size: 100px;
+  font-family: "Genos", sans-serif;
+}
+
+.contenedorClientes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuesta {
+  opacity: 0.7;
+  width: 300px;
+  height: 200px;
+}
+
+.cuesta:hover {
+  opacity: 1;
+}
